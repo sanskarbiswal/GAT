@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Game-A-Thon 2k17 - TAG Club</title>
+		<!--Icon for Webpage-->
+		<link rel="icon" href="images/ico.jpg" size="32x32"/>
+		<!--Make page responsive-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!--Include CSS and JavaScript Files from user system-->
+		<link rel="stylesheet" href="css/index.css"/>
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+		<link href="https://fonts.googleapis.com/css?family=Bitter|Lobster+Two|Merriweather|Patrick+Hand+SC" rel="stylesheet">
+		
+		<style>
+			html,body{
+				background-color : #212121;
+				margin : none;
+				height : 100%;
+				font-family: 'Bitter', serif;
+			}
+			.navbar{
+				background-color : #000000;
+				margin-bottom : 0;
+			}
+			ul.dropdown-menu{
+				background-color : #eeeeee;
+			}
+			
+			.home, .csgo, .dota, .nfs, .cod, .fifa{
+				position : relative;
+				opacity : 0.8;
+				background-attachment : fixed;
+				background-position : center;
+				background-repeat : no-repeat;
+				background-size : cover;
+			}
+			.home{
+				background-image : url("bg.jpg");
+				min-height : 100%;
+			}
+			.dota{
+				background-image : url("dota.jpg");
+				min-height : 100%;
+			}
+			.csgo{
+				background-image : url("csgo.jpg");
+				min-height : 100%;
+			}
+			.fifa{
+				background-image : url("fifa.jpg");
+				min-height : 100%;
+			}
+			.nfs{
+				background-image : url("nfs.jpg");
+				min-height : 100%;
+			}
+			.cod{
+				background-image : url("cod.jpg");
+				min-height : 100%;
+			}
+			.caption{
+				position : absolute;
+				left : 0;
+				top : 50%;
+				width : 100%;
+				text-align : center;
+				color : #000;
+				opacity : 0.85;
+			}
+			.caption span.border{
+				background-color : #111;
+				color : #fff;
+				padding : 18px;
+				font-size : 25px;
+				letter-spacing : 5px;
+			}
+			h3 {
+				letter-spacing: 5px;
+				text-transform: uppercase;
+				font: 20px "Lato", sans-serif;
+				color: #111;
+			}
+			p.simple{
+				font-family: 'Lobster Two', cursive;
+				font-size : 20px;
+			}
+			@media only screen and (max-device-width : 1024px){
+				.home, .dota, .csgo, .fifa, .cod, .nfs{
+					background-attachment : scroll;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<!--Pre-Loader-->
+		<!--Navbar-->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>                        
+					</button>
+					<a class="navbar-brand" href="#">Technology And Gaming</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">Time-Line</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Gaming Zone<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#DOTA">DOTA</a></li>
+								<li><a href="#CSGO">Counter Strike - GO</a></li>
+								<li><a href="#FIFA">FIFA - 17</a></li>
+								<li><a href="#NFS">Need For Speed - Most Wanted</a></li>
+								<li><a href="#COD">Call of Duty</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Rule Book</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sponsors</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-envelope"></span> &nbsp; Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!--Home Section-->
+		<div class="home">
+			<div class="caption">
+				<a name="homepage"></a>
+				<span class="border"> Game-A-Thon 2k17</span>
+			</div>
+		</div>
+		
+		<!--Games Section-->
+		<div style="color: #000; background-color:#ffb300; text-align:justify; text-align:center; padding:50px 80px;">
+			<h3 style="text-align:center;">Gaming Zone</h3>
+			<p class="simple">
+				This graVITas, come be a part of a legacy. Prove that you have in you the spirit and skills
+				to win at all costs. Battle it out in your favorite games and let all know that you are the
+				very best. Come claim your spot in the Hall-Of-Champions. In the biggest, baddest and meanest 
+				gaming event of graVITas, it is your game against your opponent...
+			</p>
+		</div>
+		<!--DOTA-->
+		<a name="DOTA"></a>
+		<div class="dota w3-display-container">
+			<div class="w3-display-left w3-margin">
+				<div class="w3-card-4">
+					<header class="w3-container w3-black">
+						<h3 class="w3-text-white">DOTA</h3>
+					</header>
+					<div class="w3-container w3-hover-opacity w3-text-white" style="background-color:#212121;">
+						<p class="simple">Format : Online Multiplayer</p>
+						<p class="simple">Teams  : Team of 1</p>
+						<p class="simple">Prize  : 
+						<p class="simple">Contact Person : ---------</p>
+					</div>
+					<footer class="w3-container w3-black">
+						<span>
+							<button class="btn btn-md w3-black w3-hover-opacity">Register For This Game</button>
+							<button class="btn btn-md w3-black w3-hover-opacity">See Game Standings</button>
+					</footer>
+				</div>
+			</div>
+		</div>
+		<div style="color: #fff; background-color:#000; text-align:center; padding:1px 1px;">
+			<p class="simple">
+				------------------------------------------------------------------------------------------------------------------------------------------------------
+			</p>
+		</div>
+		
+		<!--CS-GO-->
+		<a name="CSGO"></a>
+		<div class="csgo w3-display-container">
+			<div class="w3-display-left w3-margin">
+				<div class="w3-card-4">
+					<header class="w3-container w3-black">
+						<h3 class="w3-text-white">Counter Strike - Global Offensive</h3>
+					</header>
+					<div class="w3-container w3-hover-opacity w3-text-white" style="background-color:#212121;">
+						<p class="simple">Format : Team Battle</p>
+						<p class="simple">Teams  : Team of 5</p>
+						<p class="simple">Prize  : 
+						<p class="simple">Contact Person : ---------</p>
+					</div>
+					<footer class="w3-container w3-black">
+						<span>
+							<button class="btn btn-md w3-black w3-hover-opacity">Register For This Game</button>
+							<button class="btn btn-md w3-black w3-hover-opacity">See Game Standings</button>
+					</footer>
+				</div>
+			</div>
+		</div>
+		<div style="color: #fff; background-color:#000; text-align:center; padding:1px 1px;">
+			<p class="simple">
+				------------------------------------------------------------------------------------------------------------------------------------------------------
+			</p>
+		</div>
+		
+		<!--FIFA 17-->
+		<a name="FIFA"></a>
+		<div class="fifa w3-display-container">
+			<div class="w3-display-left w3-margin">
+				<div class="w3-card-4">
+					<header class="w3-container w3-black">
+						<h3 class="w3-text-white">FIFA 17</h3>
+					</header>
+					<div class="w3-container w3-hover-opacity w3-text-white" style="background-color:#212121;">
+						<p class="simple">Format : Player vs Player</p>
+						<p class="simple">Teams  : Team of 1</p>
+						<p class="simple">Prize  : 
+						<p class="simple">Contact Person : ---------</p>
+					</div>
+					<footer class="w3-container w3-black">
+						<span>
+							<button class="btn btn-md w3-black w3-hover-opacity">Register For This Game</button>
+							<button class="btn btn-md w3-black w3-hover-opacity">See Game Standings</button>
+					</footer>
+				</div>
+			</div>
+		</div>
+		<div style="color: #fff; background-color:#000; text-align:center; padding:1px 1px;">
+			<p class="simple">
+				------------------------------------------------------------------------------------------------------------------------------------------------------
+			</p>
+		</div>
+		
+		<!--NFS-->
+		<a name="NFS"></a>
+		<div class="nfs w3-display-container">
+			<div class="w3-display-left w3-margin">
+				<div class="w3-card-4">
+					<header class="w3-container w3-black">
+						<h3 class="w3-text-white">Need For Speed - Most Wanted</h3>
+					</header>
+					<div class="w3-container w3-hover-opacity w3-text-white" style="background-color:#212121;">
+						<p class="simple">Format : LAN - Multiplayer</p>
+						<p class="simple">Teams  : Team of 1</p>
+						<p class="simple">Prize  : 
+						<p class="simple">Contact Person : ---------</p>
+					</div>
+					<footer class="w3-container w3-black">
+						<span>
+							<button class="btn btn-md w3-black w3-hover-opacity">Register For This Game</button>
+							<button class="btn btn-md w3-black w3-hover-opacity">See Game Standings</button>
+					</footer>
+				</div>
+			</div>
+		</div>
+		<div style="color: #fff; background-color:#000; text-align:center; padding:1px 1px;">
+			<p class="simple">
+				------------------------------------------------------------------------------------------------------------------------------------------------------
+			</p>
+		</div>
+		
+		<!--COD-->
+		<a name="COD"></a>
+		<div class="cod w3-display-container">
+			<div class="w3-display-left w3-margin">
+				<div class="w3-card-4">
+					<header class="w3-container w3-black">
+						<h3 class="w3-text-white">Call Of Duty - Black Ops</h3>
+					</header>
+					<div class="w3-container w3-hover-opacity w3-text-white" style="background-color:#212121;">
+						<p class="simple">Format : Player vs Player</p>
+						<p class="simple">Teams  : Team of 1</p>
+						<p class="simple">Prize  : 
+						<p class="simple">Contact Person : ---------</p>
+					</div>
+					<footer class="w3-container w3-black">
+						<span>
+							<button class="btn btn-md w3-black w3-hover-opacity">Register For This Game</button>
+							<button class="btn btn-md w3-black w3-hover-opacity">See Game Standings</button>
+					</footer>
+				</div>
+			</div>
+		</div>
+		<div style="color: #fff; background-color:#000; text-align:center; padding:1px 1px;">
+			<p class="simple">
+				------------------------------------------------------------------------------------------------------------------------------------------------------
+			</p>
+		</div>
+		
+		<!--Contact Section-->
+		<section style="background-color:000; margin:5px;">
+			<h1 style="color:white;"><center>Contact Us</center></h1>
+			<form action="" method="post">
+				<input type="text" id="name" placeholder="Let Us Know Your Name" style="width:60%; height:40px; margin:5px;"/><br>
+				<input type="email" id="email" placeholder="Give an E-Mail Address for Us to Contact You" style="width:60%; margin:5px; height:40px;"/>
+				<input type="email" id="topic" placeholder="Topic of Query" style="width:60%; margin:5px; height:40px;"/>
+				<input type="textbox" id="query" style="width:60%; margin:5px; height:100px;"/><br>
+				<input type="button" class="btn btn-default" value="Mail this Query to TAG..."/>
+			</form>
+		</section>
+	</body>
+</html>
