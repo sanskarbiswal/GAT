@@ -125,12 +125,13 @@
 		<script>
 			window.onscroll = function(){scrollFunction()};
 			function preload(){
-				responsiveVoice.speak("Game a thon 2017")
-				responsiveVoice.speak("Where warriors clash, and champions rise")
+				responsiveVoice.speak("Game a thon 2017");
+				setTimeout(disp,7000);
 			}
 			function disp(){
 				document.getElementById("preload").style.display="none";
 				document.getElementById("content").style.display="initial";
+				responsiveVoice.speak("Where warriors clash, and champions rise");
 			}
 			function scrollFunction(){
 				if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
@@ -145,7 +146,7 @@
 			};
 		</script>
 	</head>
-	<body onloadstart="preload()" onloadeddata="disp()">
+	<body onload="preload()">
 		<!--Pre-Loader-->
 		<div class="preload" id="preload"></div>
 		<!--Navbar-->
