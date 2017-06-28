@@ -108,7 +108,7 @@
 		</style>
 		<script>
 			function preload(){
-				window.setTimeout(contentdisplay,5000);
+				document.onload(function(){window.setTimeout(contentdisplay,5000)});
 			}
 			function contentdisplay(){
 				document.getElementById("preload").style.display="none";
@@ -116,7 +116,7 @@
 			}
 		</script>
 	</head>
-	<body onload="preload()">
+	<body onbeforeonload="preload()">
 		<!--Pre-Loader-->
 		<div class="preload" id="preload"></div>
 		<!--Navbar-->
