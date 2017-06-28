@@ -107,6 +107,7 @@
 			}
 		</style>
 		<script>
+			window.onscroll = function(){scrollFunction()};
 			function preload(){
 				window.setTimeout(contentdisplay,5000);
 			}
@@ -114,6 +115,17 @@
 				document.getElementById("preload").style.display="none";
 				document.getElementById("content").style.display="initial";
 			}
+			function scrollFunction(){
+				if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+					document.getElementById("scrollBtn").style.display = "block";
+				}else{
+					document.getElementById("scrollBtn").style.display = "none";
+				}
+			};
+			function topFunction(){
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			};
 		</script>
 	</head>
 	<body onload="preload()">
@@ -121,6 +133,7 @@
 		<div class="preload" id="preload"></div>
 		<!--Navbar-->
 		<div class="content" id="content">
+		<button class="w3-btn w3-circle" onclick="topFunction()" id="scrollBtn"><span class="glyphicon glyphicon-arrow-up"></span></button>	
 		<nav class="navbar navbar-inverse">
 			<div class="container-fluid">
 				<div class="navbar-header">
