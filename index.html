@@ -108,7 +108,7 @@
 		</style>
 		<script>
 			function preload(){
-				document.onload(function(){window.setTimeout(contentdisplay,5000)});
+				document.onload=function(){window.setTimeout(contentdisplay,5000)};
 			}
 			function contentdisplay(){
 				document.getElementById("preload").style.display="none";
