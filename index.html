@@ -27,6 +27,9 @@
 				height : 100%;
 				font-family: 'Bitter', serif;
 			}
+			.content{
+				display : none;
+			}
 			.navbar{
 				background-color : #000000;
 				margin-bottom : 0;
@@ -35,13 +38,17 @@
 				background-color : #eeeeee;
 			}
 			
-			.home, .csgo, .dota, .nfs, .cod, .fifa{
+			.preload, .home, .csgo, .dota, .nfs, .cod, .fifa{
 				position : relative;
 				opacity : 0.8;
 				background-attachment : fixed;
 				background-position : center;
 				background-repeat : no-repeat;
 				background-size : cover;
+			}
+			.preload{
+				background-image : url("onload2.gif");
+				min-height : 100%;
 			}
 			.home{
 				background-image : url("bg.jpg");
@@ -99,10 +106,21 @@
 				}
 			}
 		</style>
+		<script>
+			function preload(){
+				setTimeout(contentdisplay,5000);
+			}
+			function contentdisplay(){
+				document.getElementById("preload").style.display="none";
+				document.getElementById("content").style.display="initial";
+			}
+		</script>
 	</head>
 	<body>
 		<!--Pre-Loader-->
+		<div class="preload" id="preload"></div>
 		<!--Navbar-->
+		<div class="content" id="content">
 		<nav class="navbar navbar-inverse">
 			<div class="container-fluid">
 				<div class="navbar-header">
@@ -303,5 +321,6 @@
 				<input type="button" class="btn btn-default" value="Mail this Query to TAG..."/>
 			</form>
 		</section>
+		</div>
 	</body>
 </html>
