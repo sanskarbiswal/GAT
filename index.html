@@ -220,6 +220,17 @@
 				document.documentElement.scrollTop = 0;
 			};
 		</script>
+		<script>
+			include('challonge.class.php');
+			$c = new ChallongeAPI('63urFwm8PooRNmVytZDoJpFahGlGdUhyDdninQgW');
+			$t = $c->getTournaments();
+			echo $c->status_code;
+			
+			//CSGO 
+			function csgoapi(){
+				
+			} 
+		</script>
 	</head>
 	<body onload="preload()">
 		<!--Pre-Loader-->
