@@ -220,17 +220,6 @@
 				document.documentElement.scrollTop = 0;
 			};
 		</script>
-		<script>
-			include('challonge.class.php');
-			$c = new ChallongeAPI('63urFwm8PooRNmVytZDoJpFahGlGdUhyDdninQgW');
-			$t = $c->getTournaments();
-			echo $c->status_code;
-			
-			//CSGO 
-			function csgoapi(){
-				
-			} 
-		</script>
 	</head>
 	<body onload="preload()">
 		<!--Pre-Loader-->
@@ -359,8 +348,8 @@
 					</footer>
 				</div>
 			</div>
-			<div style="//display:none; z-index:100;" id="csgostand" class="w3-margin">
-				<iframe src="http://challonge.com/gat17_test_csgo/module?theme=2&match_width_multiplier=1.2&scale_to_fit=1&show_final_results=0&show_standings=1&subdomain=" width="100%" height="800" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
+			<div style="z-index:100;" id="csgostand" class="w3-margin">
+				<iframe src="http://challonge.com/gat17_test_csgo/module?theme=2&match_width_multiplier=1&scale_to_fit=1&show_final_results=0&show_standings=1" width="100%" height="800px" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
 			</div>
 		</div>
 		<div style="color: #fff; background-color:#000; text-align:center; padding:1px 1px;">
