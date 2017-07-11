@@ -14,10 +14,19 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script
 		
 		<link href="https://fonts.googleapis.com/css?family=Bitter|Lobster+Two|Merriweather|Patrick+Hand+SC" rel="stylesheet">
+		
+		<script>
+			function lock(){
+				document.documentElement.requestFullscreen();
+				screen.orientation.lock('landscape').then(null, function(error){
+					document.exitFullscreen();
+				});
+			}
+		</script>
 	</head>
 	<body>
 		<div class="preload" id="preload"></div>
-		<div class="content" id="content">
+		<div class="content" id="content" onload="lock()">
 			<nav class="navbar navbar-inverse">
 				<div class="container-fluid">
 					<div class="navbar-header">
