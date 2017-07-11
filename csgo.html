@@ -13,8 +13,14 @@
 		<!-- Latest compiled JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script
 		
-		<link href="https://fonts.googleapis.com/css?family=Bitter|Lobster+Two|Merriweather|Patrick+Hand+SC" rel="stylesheet">
-		
+		<link href="https://fonts.googleapis.com/css?family=Bitter|Lobster+Two|Merriweather|Patrick+Hand+SC" rel="stylesheet"/>
+		<style type="text/css" media="display">
+			@page port{size: portrait;}
+			@page land{size: landscape;}
+			
+			.portrait{page:port;}
+			.content{page:land}
+		</style>
 		<script>
 			function lock(){
 				document.documentElement.requestFullscreen();
