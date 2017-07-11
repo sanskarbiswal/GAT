@@ -3,7 +3,7 @@
 	<head>
 		<title>Game-A-Thon 2k17 - TAG Club</title>
 		<!--Icon for Webpage-->
-		<link rel="icon" href="ico.jpg" size="32x32"/>
+		<link rel="icon" href="images/ico.jpg" size="32x32"/>
 		<!--Make page responsive-->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
@@ -64,7 +64,7 @@
 			}
 			.csgo{
 				background-image : url("csgo.jpg");
-				min-height : 100%;
+				min-height : 110%;
 			}
 			.fifa{
 				background-image : url("fifa.jpg");
@@ -330,7 +330,7 @@
 		<!--CS-GO-->
 		<a name="CSGO"></a>
 		<div class="csgo w3-display-container">
-			<div class="w3-left w3-margin">
+			<div class="w3-display-left w3-margin" id="csgodata">
 				<div class="w3-card-4">
 					<header class="w3-container w3-black">
 						<h3 class="w3-text-white">Counter Strike - Global Offensive</h3>
@@ -344,12 +344,9 @@
 					<footer class="w3-container w3-black">
 						<span>
 							<button class="btn btn-md w3-black w3-hover-opacity">Register For This Game</button>
-							<button class="btn btn-md w3-black w3-hover-opacity">See Game Standings</button>
+							<button class="btn btn-md w3-black w3-hover-opacity"><a href="csgo.html" target="_blank">See Game Standings</a></button>
 					</footer>
 				</div>
-			</div>
-			<div style="z-index:100;" id="csgostand" class="w3-margin">
-				<iframe src="https://challonge.com/gat17_test_csgo/module?theme=2&match_width_multiplier=1.2&scale_to_fit=1&show_final_results=0&show_standings=1&subdomain=" width="100%" height="800" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
 			</div>
 		</div>
 		<div style="color: #fff; background-color:#000; text-align:center; padding:1px 1px;">
